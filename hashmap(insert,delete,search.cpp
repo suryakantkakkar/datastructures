@@ -84,7 +84,7 @@ class ourmap
     }
     v deletes(string key)
     {
-        int bucketindex=getbucketindex[key];
+        int bucketindex=getbucketindex(key);
         mapnode<v> * head=buckets[bucketindex];
         mapnode<v> * preptr=NULL;
         while(head!=NULL)
